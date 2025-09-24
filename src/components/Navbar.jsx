@@ -110,11 +110,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        showNavbar
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${showNavbar
           ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md py-4"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="max-w-screen-xl mx-auto px-6 md:px-8 lg:px-16">
         <div className="flex items-center justify-between">
@@ -125,18 +124,16 @@ export default function Navbar() {
               className="flex items-center space-x-2 text-sm font-medium text-gray-600 dark:text-gray-300"
             >
               <span
-                className={`font-semibold ${
-                  currentSection === "Home"
-                    ? "text-blue-600 dark:text-blue-400"
+                className={`font-semibold ${currentSection === "Home"
+                    ? "text-pink-600 dark:text-pink-400"
                     : "text-gray-600 dark:text-gray-300"
-                }`}
+                  }`}
               >
                 {currentSection}
               </span>
               <FaChevronDown
-                className={`transition-transform duration-200 ${
-                  isDropdownOpen ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""
+                  }`}
               />
             </button>
             {isDropdownOpen && (
@@ -147,10 +144,9 @@ export default function Navbar() {
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
                       className={`w-full text-left px-4 py-2 text-sm 
-                        ${
-                          currentSection === item.label
-                            ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-semibold"
-                            : "text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/10"
+                        ${currentSection === item.label
+                          ? "bg-pink-50 dark:bg-pink-900/20 text-pink-600 dark:text-pink-400 font-semibold"
+                          : "text-gray-600 dark:text-gray-300 hover:bg-pink-50 dark:hover:bg-pink-900/10"
                         }`}
                     >
                       {item.label}
@@ -168,12 +164,11 @@ export default function Navbar() {
                 <button
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-medium transition-colors
-                    ${
-                      currentSection === item.label
-                        ? "text-blue-600 dark:text-blue-400 font-semibold"
-                        : showNavbar
-                        ? "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                        : "text-gray-600/80 dark:text-gray-300/80 hover:text-blue-600 dark:hover:text-blue-400"
+                    ${currentSection === item.label
+                      ? "text-pink-600 dark:text-pink-400 font-semibold"
+                      : showNavbar
+                        ? "text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                        : "text-gray-600/80 dark:text-gray-300/80 hover:text-pink-600 dark:hover:text-pink-400"
                     }`}
                 >
                   {item.label}
@@ -182,7 +177,7 @@ export default function Navbar() {
                 <AnimatePresence>
                   {currentSection === item.label && (
                     <motion.div
-                      className="absolute bottom-[-8px] h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full w-full"
+                      className="absolute bottom-[-8px] h-0.5 bg-pink-600 dark:bg-pink-400 rounded-full w-full"
                       initial={{ scaleX: 0, opacity: 0 }}
                       animate={{ scaleX: 1, opacity: 1 }}
                       exit={{ scaleX: 0, opacity: 0 }}

@@ -27,7 +27,7 @@ const goals: Goal[] = [
     type: "timeline",
     name: "Half Marathon",
     emoji: "🏃‍♂️",
-    color: "from-blue-500 to-blue-600",
+    color: "from-pink-500 to-pink-600",
     startDate: "2025-04-01",
     endDate: "2025-10-04",
   },
@@ -45,7 +45,7 @@ const goals: Goal[] = [
     startDate: "2025-04-01",
     endDate: "2026-03-01",
     emoji: "🏃‍♂️",
-    color: "from-blue-500 to-blue-600",
+    color: "from-pink-500 to-pink-600",
   },
   {
     type: "quantity",
@@ -130,11 +130,9 @@ export default function GoalsSection() {
               </div>
               <div className="h-4 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden border border-gray-200 dark:border-gray-700">
                 <div
-                  className={`h-full bg-gradient-to-r ${
-                    goal.color
-                  } transition-all duration-1000 ease-out ${
-                    isVisible ? "hover:brightness-110" : ""
-                  }`}
+                  className={`h-full bg-gradient-to-r ${goal.color
+                    } transition-all duration-1000 ease-out ${isVisible ? "hover:brightness-110" : ""
+                    }`}
                   style={{
                     width: isVisible ? `${percentage}%` : "0%",
                   }}

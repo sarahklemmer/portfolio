@@ -52,10 +52,6 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-6">My Strava</h3>
-            <StravaWidget />
-          </div>
-          <div className="text-center">
             <h3 className="text-2xl font-bold mb-6">Personal Goals</h3>
             <GoalsSection />
           </div>

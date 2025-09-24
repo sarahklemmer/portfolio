@@ -12,20 +12,7 @@
     "github": "",
     "live": "",
     "year": 2025,
-    "image": "/assets/personal.png"
-  },
-  {
-    "title": "Digit Speech Recognizer",
-    "summary": "Speech recognition model for spoken digits.",
-    "description": "Implemented signal processing and model training in Python to recognize spoken digits from audio samples.",
-    "tags": [
-      "Python",
-      "Machine Learning"
-    ],
-    "github": "",
-    "live": "",
-    "year": 2024,
-    "image": "/assets/personal.png"
+    "image": "/assets/App.png"
   },
   {
     "title": "Legend of Zelda (1986) Clone",
@@ -39,6 +26,19 @@
     "github": "",
     "live": "",
     "year": 2025,
-    "image": "/assets/personal.png"
+    "image": "/assets/014.png"
+  },
+  {
+    "title": "Digit Speech Recognizer",
+    "summary": "Speech recognition model for spoken digits.",
+    "description": "Implemented signal processing and model training in Python to recognize spoken digits from audio samples.",
+    "tags": [
+      "Python",
+      "Machine Learning"
+    ],
+    "github": "",
+    "live": "",
+    "year": 2024,
+    "image": "/assets/digitrecognizer.jpg"
   }
 ]

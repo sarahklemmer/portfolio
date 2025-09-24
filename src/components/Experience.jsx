@@ -152,12 +152,12 @@ const TimelineItem = forwardRef(function TimelineItem(
       >
         <div
           className={`${isActive
-              ? "bg-white dark:bg-slate-900 border-blue-900 dark:border-cyan-300 border-2 scale-[1.02]"
-              : "bg-white dark:bg-slate-900 border-neutral-200 dark:border-slate-700 border-2"
+            ? "bg-white dark:bg-slate-900 border-pink-900 dark:border-pink-300 border-2 scale-[1.02]"
+            : "bg-white dark:bg-slate-900 border-neutral-200 dark:border-slate-700 border-2"
             } rounded-lg p-6 shadow-lg transition-all duration-300 relative z-20 text-gray-900 dark:text-white`}
         >
           <h3 className="text-xl font-bold mb-1">{experience.title}</h3>
-          <h4 className="text-lg font-semibold text-blue-900 dark:text-cyan-300 mb-1">
+          <h4 className="text-lg font-semibold text-pink-900 dark:text-pink-300 mb-1">
             {experience.url ? (
               <a
                 href={experience.url}
@@ -182,14 +182,14 @@ const TimelineItem = forwardRef(function TimelineItem(
       <div className="flex items-center justify-center z-10">
         <div
           className={`w-8 h-8 rounded-full transition-colors duration-300 border-4 border-neutral-200 dark:border-slate-700 ${isActive
-              ? "bg-blue-900 dark:bg-cyan-400"
-              : "bg-gray-200 dark:bg-slate-700"
+            ? "bg-pink-900 dark:bg-pink-400"
+            : "bg-gray-200 dark:bg-slate-700"
             } flex items-center justify-center`}
         >
           <span
             className={`${isActive
-                ? "text-white dark:text-cyan-900"
-                : "text-blue-900 dark:text-cyan-300"
+              ? "text-white dark:text-pink-900"
+              : "text-pink-900 dark:text-pink-300"
               } text-sm font-bold`}
           >
             {index + 1}

@@ -85,19 +85,18 @@ export default function HeroSection() {
         <FloatingElement delay={0.4}>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
             I'm a third-year at <strong>University of Michigan</strong>, majoring in{" "}
-            <strong>Computer Science</strong> and <strong>Cognitive Science</strong>{" "}
-            and minoring in <strong>Economics</strong>. As an active member of{" "}
-            <i>Triton Unmanned Aerial Systems</i> (TUAS) and{" "}
-            <i>Triton Consulting Group</i> (TCG), I collaborate with fellow
+            <strong>Computer Science</strong> and <strong>Cognitive Science</strong>. As an active member of{" "}
+            <i>Kappa Theta Pi</i> and{" "}
+            <i>URB Consulting</i>, I collaborate with fellow
             students to deliver real-world projects while gaining hands-on
-            experience in full-stack development and technical consulting.
+            experience in software development and technical consulting.
           </p>
         </FloatingElement>
 
         <FloatingElement delay={0.6}>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            In my free time, I enjoy discovering new music, playing basketball,
-            and expanding my vinyl collection. I'd love to connect and chat
+            In my free time, I enjoy dancing, doing nails,
+            and going to concerts. I'd love to connect and chat
             about any of these interests or tech in general, so feel free to
             reach out!
           </p>
@@ -109,7 +108,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="mailto:sarahmklemmer@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-3 px-6 text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg py-3 px-6 text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
             >
               <FaEnvelope className="h-5 w-5" />
               Contact Me
@@ -167,7 +166,7 @@ export default function HeroSection() {
         style={getParallaxStyle(-0.2)}
       >
         <Image
-          src="/assets/new-profile-picture.jpg"
+          src="/assets/Sarah_Klemmer_Headshot.jpg"
           alt="Sarah Klemmer"
           fill
           sizes="(max-width: 768px) 256px, 256px"
@@ -185,9 +184,9 @@ export default function HeroSection() {
           transition={{ duration: 0.3 }}
           aria-label="Scroll to projects"
           onClick={handleArrowClick}
-          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 rounded-full shadow-md p-2 z-20 animate-bounce border border-gray-200 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
+          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 rounded-full shadow-md p-2 z-20 animate-bounce border border-gray-200 dark:border-gray-700 hover:bg-pink-100 dark:hover:bg-pink-900 transition-colors"
         >
-          <FaChevronDown className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          <FaChevronDown className="h-6 w-6 text-pink-600 dark:text-pink-400" />
         </motion.button>
       )}
     </section>
