@@ -126,7 +126,7 @@ export default function AlbumCarousel({
                 <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl bg-card">
                   <Image
                     src={album.coverUrl}
-                    alt="Spencer Cowles"
+                    alt="Sarah Klemmer"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

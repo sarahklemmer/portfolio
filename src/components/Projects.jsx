@@ -67,11 +67,10 @@ export default function Projects() {
             scale: 1.02,
             transition: { duration: 0.2 },
           }}
-          className={`h-full ${
-            visibleProjects.length % 2 === 0
+          className={`h-full ${visibleProjects.length % 2 === 0
               ? "lg:col-start-1 md:col-start-1 col-span-1"
               : "lg:col-start-2 md:col-start-2 col-span-1"
-          }`}
+            }`}
           onClick={() => setShowAllProjects(true)}
         >
           <ThemedCard className="cursor-pointer flex flex-col items-center justify-center">
@@ -107,11 +106,10 @@ export default function Projects() {
             scale: 1.02,
             transition: { duration: 0.2 },
           }}
-          className={`h-full ${
-            projects.length % 2 === 0
+          className={`h-full ${projects.length % 2 === 0
               ? "lg:col-start-1 md:col-start-1 col-span-1"
               : "lg:col-start-2 md:col-start-2 col-span-1"
-          }`}
+            }`}
           onClick={() => setShowAllProjects(false)}
         >
           <ThemedCard className="cursor-pointer flex flex-col items-center justify-center">
@@ -165,9 +163,8 @@ function ProjectCard({ project, index, isExpanded, setExpandedCardIndex }) {
             </CardTitle>
             <div className="transform transition-transform duration-300 group-hover:translate-x-1">
               <svg
-                className={`w-5 h-5 text-muted-foreground transition-transform duration-300 ${
-                  isExpanded ? "rotate-180" : ""
-                }`}
+                className={`w-5 h-5 text-muted-foreground transition-transform duration-300 ${isExpanded ? "rotate-180" : ""
+                  }`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -191,7 +188,7 @@ function ProjectCard({ project, index, isExpanded, setExpandedCardIndex }) {
             <div className="w-full h-56 flex items-center justify-center overflow-hidden rounded-md mb-4 bg-white/5">
               <Image
                 src={project.image}
-                alt="Spencer Cowles"
+                alt="Sarah Klemmer"
                 className="object-contain max-h-full max-w-full"
                 width={400 * (project.imageScale || 1)}
                 height={300 * (project.imageScale || 1)}

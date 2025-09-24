@@ -76,7 +76,7 @@ export default function HeroSection() {
         <FloatingElement delay={0.2}>
           <div className="flex items-center gap-3 mb-8">
             <TextGenerateEffect
-              words="Hi, I'm Spencer Cowles 👋"
+              words="Hi, I'm Sarah Klemmer 👋"
               className="text-5xl sm:text-6xl font-bold"
             />
           </div>
@@ -84,8 +84,8 @@ export default function HeroSection() {
 
         <FloatingElement delay={0.4}>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            I'm a third-year at <strong>UC San Diego</strong>, majoring in{" "}
-            <strong>Mathematics</strong> and <strong>Computer Science</strong>{" "}
+            I'm a third-year at <strong>University of Michigan</strong>, majoring in{" "}
+            <strong>Computer Science</strong> and <strong>Cognitive Science</strong>{" "}
             and minoring in <strong>Economics</strong>. As an active member of{" "}
             <i>Triton Unmanned Aerial Systems</i> (TUAS) and{" "}
             <i>Triton Consulting Group</i> (TCG), I collaborate with fellow
@@ -108,7 +108,7 @@ export default function HeroSection() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:spencerwcowles@gmail.com"
+              href="mailto:sarahmklemmer@gmail.com"
               className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-3 px-6 text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
             >
               <FaEnvelope className="h-5 w-5" />
@@ -119,7 +119,7 @@ export default function HeroSection() {
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://github.com/spencerwcowles"
+                href="https://github.com/sarahklemmer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -130,7 +130,7 @@ export default function HeroSection() {
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://linkedin.com/in/spencercowles"
+                href="https://linkedin.com/in/sarahklemmer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -141,7 +141,7 @@ export default function HeroSection() {
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="/assets/Spencer_Cowles_Resume.pdf"
+                href="/assets/Sarah_Klemmer_CV_9_25.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-transparent dark:border-gray-700 bg-gray-900 dark:bg-gray-800 text-white rounded-lg py-2 px-4 hover:bg-gray-800 dark:hover:bg-gray-700 dark:hover:border-gray-600 transition-colors"
@@ -168,7 +168,7 @@ export default function HeroSection() {
       >
         <Image
           src="/assets/new-profile-picture.jpg"
-          alt="Spencer Cowles"
+          alt="Sarah Klemmer"
           fill
           sizes="(max-width: 768px) 256px, 256px"
           quality={95}

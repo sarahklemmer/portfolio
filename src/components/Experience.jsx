@@ -5,52 +5,73 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Backend Developer",
-    company: "KlonIt.AI",
-    url: "https://klonit.ai/",
-    date: "Mar. 2025 – Present",
-    description:
-      "Built MCP-based SQL Server connector for LLM tools like Claude Desktop. Developed local testing infrastructure and led GitHub-driven agile workflows.",
+    title: "Software Development Intern",
+    company: "CGI",
+    url: "",
+    date: "June 2025 – Present",
+    description: (
+      <ul className="list-disc ml-5">
+        <li>
+          Developed automated pod testing framework, creating 20+ comprehensive tests
+          across Tanzu Management and Calico cluster environments, catching 15+ bugs
+          and enhancing system reliability and performance.
+        </li>
+        <li>
+          Built search bot systems with daily testing cycles for both Tanzu Management
+          and Calico clusters within the Managed IP Cloud infrastructure, automating
+          network management tasks and improving efficiency.
+        </li>
+        <li>
+          Collaborated with a 10-person global team across 4 time zones in DevOps
+          Agile ceremonies, ensuring project alignment, timely delivery of features,
+          and effective communication.
+        </li>
+        <li>
+          Documented process for adding new tests to automated pod testing framework,
+          ensuring future scalability for test additions; wrote a white paper to help
+          team and clients understand importance of different testing strategies.
+        </li>
+      </ul>
+    ),
   },
   {
-    title: "Associate/Software Developer",
-    company: "Triton Consulting Group",
-    url: "https://ucsdtcg.org/",
-    date: "Feb. 2025 – Present",
-    description:
-      "Developed React frontend with Chakra UI and Framer Motion. Built secure authentication, file uploads (Multer, MongoDB), and optimized REST APIs.",
+    title: "Software Engineering Intern",
+    company: "Teidore",
+    url: "",
+    date: "June 2024 – Aug 2024",
+    description: (
+      <ul className="list-disc ml-5">
+        <li>
+          Self-taught React.js and built interactive web interfaces within 3 weeks,
+          delivering a responsive user experience.
+        </li>
+        <li>
+          Utilized BeautifulSoup to scrape partner websites for data, integrating it
+          into site and automating data collection process to enhance site
+          functionality and user experience.
+        </li>
+      </ul>
+    ),
   },
   {
-    title: "Software Engineer",
-    company: "Triton Unmanned Aerial Systems",
-    url: "https://tritonuas.com/",
-    date: "June 2024 – March 2025",
-    description:
-      "Engineered A* and RRT* path planning algorithms for autonomous drones. Integrated live aerial mapping with real-time image stitching.",
-  },
-  {
-    title: "Summer Teaching Assistant",
-    company: "All Saints Episcopal Day School",
-    url: "https://allsaints.org/",
-    date: "June 2024 - August 2024",
-    description:
-      "Supported instruction across 8 classes. Delivered 50+ lesson plans and organized educational activities with 95% student engagement.",
-  },
-  {
-    title: "Computer Science Fellow",
-    company: "Headstarter",
-    url: "https://headstarter.co/",
-    date: "July 2024 - August 2024",
-    description:
-      "Built a food inventory tracker with Python and SQLite. Designed and launched a personal portfolio website using HTML, CSS, and JavaScript.",
-  },
-  {
-    title: "Math Tutor",
-    company: "Mathnasium",
-    url: "https://www.mathnasium.com/",
-    date: "Feb. 2021 - Feb. 2022",
-    description:
-      "Tutored 40+ students in math fundamentals. Created custom lesson plans and led 20+ parent-teacher meetings to track progress.",
+    title: "Independent Researcher",
+    company: "Michigan Alzheimer’s Disease Center",
+    url: "",
+    date: "Sept. 2023 – Present",
+    description: (
+      <ul className="list-disc ml-5">
+        <li>
+          Conducted statistical analysis on 13,621 patient records with R to explore
+          dementia-anxiety-alcohol correlations, identifying key patterns and
+          contributing to ongoing research.
+        </li>
+        <li>
+          Presented research findings to 200+ faculty, students, and professionals
+          at UROP symposium, receiving positive feedback and securing a faculty
+          recommendation for publication.
+        </li>
+      </ul>
+    ),
   },
 ];
 
@@ -119,9 +140,8 @@ const TimelineItem = forwardRef(function TimelineItem(
   return (
     <div
       ref={ref}
-      className={`flex flex-col md:flex-row items-start md:items-center gap-4 ${
-        index % 2 === 0 ? "md:flex-row-reverse" : ""
-      }`}
+      className={`flex flex-col md:flex-row items-start md:items-center gap-4 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+        }`}
     >
       <motion.div
         className={`flex-1 ${index % 2 === 0 ? "md:text-right" : ""}`}
@@ -131,11 +151,10 @@ const TimelineItem = forwardRef(function TimelineItem(
         transition={{ duration: 0.5, delay: index * 0.1 }}
       >
         <div
-          className={`${
-            isActive
+          className={`${isActive
               ? "bg-white dark:bg-slate-900 border-blue-900 dark:border-cyan-300 border-2 scale-[1.02]"
               : "bg-white dark:bg-slate-900 border-neutral-200 dark:border-slate-700 border-2"
-          } rounded-lg p-6 shadow-lg transition-all duration-300 relative z-20 text-gray-900 dark:text-white`}
+            } rounded-lg p-6 shadow-lg transition-all duration-300 relative z-20 text-gray-900 dark:text-white`}
         >
           <h3 className="text-xl font-bold mb-1">{experience.title}</h3>
           <h4 className="text-lg font-semibold text-blue-900 dark:text-cyan-300 mb-1">
@@ -162,18 +181,16 @@ const TimelineItem = forwardRef(function TimelineItem(
       </motion.div>
       <div className="flex items-center justify-center z-10">
         <div
-          className={`w-8 h-8 rounded-full transition-colors duration-300 border-4 border-neutral-200 dark:border-slate-700 ${
-            isActive
+          className={`w-8 h-8 rounded-full transition-colors duration-300 border-4 border-neutral-200 dark:border-slate-700 ${isActive
               ? "bg-blue-900 dark:bg-cyan-400"
               : "bg-gray-200 dark:bg-slate-700"
-          } flex items-center justify-center`}
+            } flex items-center justify-center`}
         >
           <span
-            className={`${
-              isActive
+            className={`${isActive
                 ? "text-white dark:text-cyan-900"
                 : "text-blue-900 dark:text-cyan-300"
-            } text-sm font-bold`}
+              } text-sm font-bold`}
           >
             {index + 1}
           </span>

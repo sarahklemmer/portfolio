@@ -11,8 +11,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Spencer Cowles",
-  description: "Software Engineer and Full Stack Developer",
+  title: "Sarah Klemmer",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({ children }) {

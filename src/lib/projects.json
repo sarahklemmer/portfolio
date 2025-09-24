@@ -1,53 +1,44 @@
 [
   {
-    "title": "Not Red Shirt",
-    "summary": "DiamondHacks 2025 Winner of 2 Categories: Best E-commerce Product and Best Use of MongoDB Atlas",
-    "description": "Engineered a full-stack semantic search engine for e-commerce that processes natural language queries with negations (e.g., 'not red shirt') to optimize product discovery and elevate the user experience. Processed 1.4M Amazon listings and filtered 260K clothing items; leveraged LangChain to generate vector embeddings and created 1536-dimensional vectors to power advanced semantic search from our vector database. Integrated multi-input search capabilities including text, voice, and image to deliver a multimodal, accessible, and visually engaging frontend with React and Tailwind CSS. Showcased creative problem-solving, technical excellence, and a sleek, modern interface.",
+    "title": "KTP Life App",
+    "summary": "Mobile app for Kappa Theta Pi members to track events, projects, and resources.",
+    "description": "A mobile app built with SwiftUI and Flutter, integrated with Firebase for authentication and real-time data sync.",
     "tags": [
-      "Python",
-      "Flask",
-      "MongoDB",
-      "LangChain",
-      "Google Gemini",
-      "Pandas",
-      "JavaScript",
-      "Node.js",
-      "React",
-      "HTML/CSS"
+      "SwiftUI",
+      "Flutter",
+      "Firebase",
+      "Git"
     ],
-    "github": "https://github.com/mayhong1/diamondhacks",
-    "live": "https://devpost.com/software/no-red-shirt",
-    "year": 2025,
-    "image": "/assets/notredshirt.png"
-  },
-  {
-    "title": "TCG Application Portal",
-    "summary": "Full-stack portal for managing consulting project applications created for Triton Consulting Group",
-    "description": "Engineered a full-stack portal for managing consulting project applications. Built user authentication, application forms, and admin dashboard.",
-    "tags": ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
-    "github": "https://github.com/triton-consulting-group/tcg-application-portal",
+    "github": "",
     "live": "",
     "year": 2025,
-    "image": "/assets/tcg.png"
+    "image": "/assets/personal.png"
   },
   {
-    "title": "Triton UAS (Unmanned Aerial Systems)",
-    "summary": "Autonomous drone navigation and mapping system",
-    "description": "Optimized autonomous drone navigation using A* and RRT* pathfinding algorithms. Developed real-time mapping system to stitch 100+ aerial images into cohesive maps during flight. Maximized mission efficiency through intelligent path planning.",
-    "tags": ["C++", "Python"],
+    "title": "Digit Speech Recognizer",
+    "summary": "Speech recognition model for spoken digits.",
+    "description": "Implemented signal processing and model training in Python to recognize spoken digits from audio samples.",
+    "tags": [
+      "Python",
+      "Machine Learning"
+    ],
     "github": "",
     "live": "",
     "year": 2024,
-    "image": "/assets/tritonuas.png"
+    "image": "/assets/personal.png"
   },
   {
-    "title": "Personal Website",
-    "summary": "Modern portfolio website built with React and Next.js",
-    "description": "Designed and built a modern portfolio website using React and Next.js. Implemented responsive design, dark mode, and interactive UI components. Focused on clean code architecture and performance optimization.",
-    "tags": ["JavaScript", "HTML", "CSS", "React"],
-    "github": "https://github.com/spencerwcowles/personal-website",
-    "live": "https://spencercowles.com",
-    "year": 2024,
+    "title": "Legend of Zelda (1986) Clone",
+    "summary": "A recreation of the original Legend of Zelda built in Unity.",
+    "description": "Built core gameplay mechanics, enemy AI, and level design using Unity and C#.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Development"
+    ],
+    "github": "",
+    "live": "",
+    "year": 2025,
     "image": "/assets/personal.png"
   }
 ]

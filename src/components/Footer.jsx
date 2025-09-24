@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex space-x-6">
             <a
-              href="https://github.com/spencerwcowles"
+              href="https://github.com/sarahklemmer"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
@@ -17,7 +17,7 @@ export default function Footer() {
               <FaGithub className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/spencercowles"
+              href="https://linkedin.com/in/sarahklemmer"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
@@ -26,7 +26,7 @@ export default function Footer() {
               <FaLinkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:scowles@ucsd.edu"
+              href="mailto:sarahmklemmer@gmail.com"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
               aria-label="Email"
             >
@@ -34,7 +34,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} spencercowles.com
+            © {new Date().getFullYear()} sarahklemmer.com
           </p>
           <p className="text-sm text-gray-400 italic mt-2">
             Last updated May 2025
