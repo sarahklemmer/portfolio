@@ -68,8 +68,8 @@ export default function Projects() {
             transition: { duration: 0.2 },
           }}
           className={`h-full ${visibleProjects.length % 2 === 0
-              ? "lg:col-start-1 md:col-start-1 col-span-1"
-              : "lg:col-start-2 md:col-start-2 col-span-1"
+            ? "lg:col-start-1 md:col-start-1 col-span-1"
+            : "lg:col-start-2 md:col-start-2 col-span-1"
             }`}
           onClick={() => setShowAllProjects(true)}
         >
@@ -107,8 +107,8 @@ export default function Projects() {
             transition: { duration: 0.2 },
           }}
           className={`h-full ${projects.length % 2 === 0
-              ? "lg:col-start-1 md:col-start-1 col-span-1"
-              : "lg:col-start-2 md:col-start-2 col-span-1"
+            ? "lg:col-start-1 md:col-start-1 col-span-1"
+            : "lg:col-start-2 md:col-start-2 col-span-1"
             }`}
           onClick={() => setShowAllProjects(false)}
         >
@@ -253,6 +253,21 @@ function ProjectCard({ project, index, isExpanded, setExpandedCardIndex }) {
                   <FaExternalLinkAlt className="h-4 w-4 mr-2" />
                   View Project
                 </Button>
+              )}
+              {project.links && project.links.length > 0 && (
+                project.links.map((lnk, i) => (
+                  <Button
+                    key={i}
+                    className="h-9 rounded-md px-3 bg-primary text-primary-foreground hover:bg-primary/90"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (lnk.url) window.open(lnk.url, "_blank");
+                    }}
+                  >
+                    <FaExternalLinkAlt className="h-4 w-4 mr-2" />
+                    {lnk.label}
+                  </Button>
+                ))
               )}
             </div>
           </motion.div>

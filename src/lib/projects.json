@@ -11,6 +11,7 @@
     ],
     "github": "",
     "live": "",
+    "links": [],
     "year": 2025,
     "image": "/assets/App.png"
   },
@@ -23,8 +24,14 @@
       "C#",
       "Game Development"
     ],
-    "github": "https://sarahklemmer.itch.io/legend-of-zelda-clone",
+    "github": "",
     "live": "",
+    "links": [
+      {
+        "label": "Itch.io",
+        "url": "https://sarahklemmer.itch.io/legend-of-zelda-clone"
+      }
+    ],
     "year": 2025,
     "image": "/assets/014.png"
   },
@@ -38,6 +45,7 @@
     ],
     "github": "",
     "live": "",
+    "links": [],
     "year": 2024,
     "image": "/assets/digitrecognizer.jpg"
   }
