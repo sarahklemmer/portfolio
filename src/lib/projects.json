@@ -36,6 +36,26 @@
     "image": "/assets/014.png"
   },
   {
+    "title": "Shady Warden",
+    "summary": "A block-moving puzzle game built in Unity.",
+    "description": "Built core gameplay mechanics and level design using Unity and C#.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Development"
+    ],
+    "github": "",
+    "live": "",
+    "links": [
+      {
+        "label": "Itch.io",
+        "url": "https://sarahklemmer.itch.io/shady-warden"
+      }
+    ],
+    "year": 2025,
+    "image": "/assets/shady.png"
+  },
+  {
     "title": "Digit Speech Recognizer",
     "summary": "Speech recognition model for spoken digits.",
     "description": "Implemented signal processing and model training in Python to recognize spoken digits from audio samples.",
